@@ -1,0 +1,43 @@
+import java.util.Scanner;
+Scanner scanner_name= new Scanner(System.in);
+var_name= scanner_name.input_method;
+
+
+
+next( ): 	if String 
+nextInt( ): 	if int 
+nextDouble( ): if double 
+nextFloat( ): 	if float 
+nextByte( ):	if byte
+
+
+
+
+Scanner input = new Scanner(System.in);
+System.out.print ("Enter a Number for Radius : ");
+        double radius= input.nextDouble ( );
+        double area = radius * radius * 3.1459;
+System.out.println ( "The area for the circle of Radius : " + radius + "  is  " + area );
+
+
+
+
+Scanner input= new Scanner(System.in) ;
+System.out.print ( " Enter anumber in pounds :  "  ) ;
+    double kilo = 0.454;
+    double pounds = kilo * input.nextDouble ( ) ;
+System.out.print ( " pounds in kilograms is :   "  +  pounds  ) ;
+
+
+
+
+التقريب لخانتين عشرية
+Scanner input = new Scanner(System.in);
+System.out.print("Enter a Number : ");
+    double Number= input.nextDouble( );
+    double area = Number * Number * 3.1459;
+System.out.println( " The area for the Number :  "  +  ( int )( Number * 1000 ) / 1000.0 );
+
+
+
+
