@@ -1,0 +1,56 @@
+/*
+
+Convert Temperature
+
+Write a program that converts a temperature in Fahrenheit into Celsius.
+    –You will need the following formula:
+        Remember:
+        –Step 1: Problem-solving Phase
+        –Step 2: Implementation Phase
+
+Step 1: Design your algorithm
+    1.Get temperature in Fahrenheitfrom the user.
+        Use Scanner object
+        Save temperature as an int
+    2.Compute the temperature into Celsuis:
+        Use formula:
+        But write the formula in Java:
+            celsius= (5.0 / 9) * (fahrenheit–32);
+    3.Display the result
+
+Discussion: be careful when dividing integers
+    –Notice the formula has 5 divided by 9
+    –What happens if we write this formula as:
+        celsius= (5 / 9) * (fahrenheit–32);
+
+    –(5 / 9) evaluates to zero!
+        Integer division!
+
+    –So we use (5.0 / 9) instead, which gives a number
+
+See sample program: TempConvert.java
+
+
+*/
+
+
+import java.util.Scanner;
+
+public class Convert_Temperature {
+
+    public static void main(String[] args) {
+
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Enter a degree in Fahrenheit: ");
+
+        double fahrenheit = input.nextDouble();
+
+        // Convert Fahrenheit to Celsius
+        double celsius = (5.0 / 9) * (fahrenheit - 32);
+
+    System.out.println("Fahrenheit " + fahrenheit + " is " + celsius + " in Celsius " );
+
+    }
+    
+}
