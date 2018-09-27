@@ -36,11 +36,11 @@ public class Lab_02 {
         ****************************************************************/
 
 
-        
-       // Write a program that converts pounds into kilograms. The program should ask the user to enter anumber in pounds. 
-       // The program should then convert this number into kilograms and then display the result. 
-       // *Note: one pound is 0.454 kilograms. Here is a sample run of the program:
-        
+        /*
+        Write a program that converts pounds into kilograms. The program should ask the user to enter anumber in pounds. 
+        The program should then convert this number into kilograms and then display the result. 
+        *Note: one pound is 0.454 kilograms. Here is a sample run of the program:
+        */
         /****************************************************************
         
         Scanner input= new Scanner(System.in);
