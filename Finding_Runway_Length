@@ -1,0 +1,61 @@
+
+// Lab03_Elementary_Programming_II-Finding_Runway_Length
+
+/*
+
+Individual Activities: (60 minutes) 
+ 
+1.	(Physics: finding runway length) Given an airplane’s acceleration a and take-off speed v, 
+	you can compute the minimum runway length needed for an airplane to take off using the
+	following formula: 
+             
+             Length = (V×V)/2A
+ 
+	Write a program that prompts the user to enter v in meters/second (m/s) and the 
+	acceleration a in meters/second squared (m/s2), and displays the minimum runway length. 
+
+Here is a sample run: 
+v = 60
+A = 3.5
+Length = 514.285
+
+*/
+
+import java.util.Scanner;
+
+public class NewMain {
+
+    public static void main(String[] args) {
+  
+        /*  
+            length =  (Math.pow(v.2)}/(2*a);
+
+            v = Math.pwr(v.2)
+            a = 2*a
+        
+        */  
+        
+        Scanner input = new Scanner(System.in);
+        double v, a;
+          System.out.print("Enter v: " );       
+             v = input.nextDouble();
+
+          System.out.print("Enter A: " );
+             a = input.nextDouble();
+
+            double length =  (Math.pow(v,2))/(2*a);
+          System.out.println("length =  " + (int)(length*1000)/1000.0);
+
+    }
+
+}
+    
+
+
+
+
+
+
+
+
+
