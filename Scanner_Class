@@ -1,6 +1,11 @@
-import java.util.Scanner;
-Scanner scanner_name= new Scanner(System.in);
-var_name = scanner_name.input_method;
+/*
+byte 	1 byte 	        128	-127
+short 	2 bytes 	32,768	-32,767
+int 	4 bytes 	2,147,483,648	-2,147,483,647
+long 	8 bytes 	9,223,372,036,854,775,808  	-9,223,372,036,854,775,80
+float 	4 bytes 	7 decimal digits.	
+double 	8 bytes 	16 decimal digits.
+
 
 
 next( ): 	if String 
@@ -9,32 +14,7 @@ nextDouble( ):  if double
 nextFloat( ): 	if float 
 nextByte( ):	if byte
 
-
-Scanner input = new Scanner(System.in);
-System.out.print ("Enter a Number for Radius : ");
-        double radius= input.nextDouble ( );
-        double area = radius * radius * 3.1459;
-System.out.println ( "The area for the circle of Radius : " + radius + "  is  " + area );
-
-
-
-Scanner input= new Scanner(System.in) ;
-System.out.print ( " Enter anumber in pounds :  "  ) ;
-    double kilo = 0.454;
-    double pounds = kilo * input.nextDouble ( ) ;
-System.out.print ( " pounds in kilograms is :   "  +  pounds  ) ;
-
-
-
-
-التقريب لخانتين عشرية
-Scanner input = new Scanner(System.in);
-System.out.print("Enter a Number : ");
-    double Number= input.nextDouble( );
-    double area = Number * Number * 3.1459;
-System.out.println( " The area for the Number :  "  +  ( int )( Number * 1000 ) / 1000.0 );
-
-
+*/
 
 
 package lab_02;
@@ -43,48 +23,114 @@ public class Lab_02 {
     public static void main(String[] args) {
         
         /****************************************************************
+        
         Scanner input = new Scanner(System.in);
+        
         System.out.print("Enter a Number for Radius : ");
+        
             double radius= input.nextDouble();
             double area = radius * radius * 3.1459;
+            
         System.out.println("The area for the circle of Radius : " + radius + "  is  " + area);
+        
         ****************************************************************/
 
 
+        
+       // Write a program that converts pounds into kilograms. The program should ask the user to enter anumber in pounds. 
+       // The program should then convert this number into kilograms and then display the result. 
+       // *Note: one pound is 0.454 kilograms. Here is a sample run of the program:
+        
         /****************************************************************
+        
         Scanner input= new Scanner(System.in);
+        
         System.out.print("Enter anumber in pounds : " );
+        
             double kilo = 0.454;
             double pounds = kilo * input.nextDouble() ;
+            
         System.out.print("pounds in kilograms is :  " + pounds);
+        
         ****************************************************************/
 
 
+        /*
+        Tipping for service is very common in many countries, and the normal percentage for tipping is 15%.
+        For example, if you eat at a restaurant and the total bill comes to 50, the normal tip would be 15% of the 50, which is 7.5. 
+        So the total you pay will be 57.5. But perhaps in another country, 10% is the normal tipping percentage. 
+        In this case, the tip would be 5, for a total of 55.
+        Write a program that reads the subtotal and the desired tip rate. 
+        Your program should then compute the tip, the new total, and should display the results. 
+        Here is a sample run of the program:
+        */
+        
         /****************************************************************/
+        
         Scanner input = new Scanner(System.in);
+        
         System.out.print ("Enter the SubTotal:  "); 	//Enter the subtotal:  78        
             double subTotal = input.nextDouble();
+            
         System.out.print ("Enter the Tip Rate: "); 	//Enter the tip rate: 5          
             double tipRate = input.nextDouble();
             double Tip = ( tipRate/100 ) * subTotal;
             double Total = subTotal + Tip;
+            
         System.out.println("The Tip is: " + (int)(Tip*1000)/1000.0 + " SR  ");	// The tip is 3.9 SR.
+        
         System.out.println("The Total is:   " + Total + " SR  ");		// The Total is 81.9 SR.       
+        
         /****************************************************************/
 
 
+	
+        /****************************************************************
+
+
+        import java.util.Scanner;
+        Scanner scanner_name= new Scanner(System.in);
+        var_name = scanner_name.input_method;
+
+        ****************************************************************/
+
+
+        /****************************************************************
+
+        Scanner input = new Scanner(System.in);
+        System.out.print ("Enter a Number for Radius : ");
+                double radius= input.nextDouble ( );
+                double area = radius * radius * 3.1459;
+        System.out.println ( "The area for the circle of Radius : " + radius + "  is  " + area );
+
+        ****************************************************************/
+
+
+        /****************************************************************
+
+
+        Scanner input= new Scanner(System.in) ;
+        System.out.print ( " Enter anumber in pounds :  "  ) ;
+            double kilo = 0.454;
+            double pounds = kilo * input.nextDouble ( ) ;
+        System.out.print ( " pounds in kilograms is :   "  +  pounds  ) ;
+        
+        ****************************************************************/
 
 
 
+        /****************************************************************
 
-byte 	1 byte 	        128	-127
-short 	2 bytes 	32,768	-32,767
-int 	4 bytes 	2,147,483,648	-2,147,483,647
-long 	8 bytes 	9,223,372,036,854,775,808  	-9,223,372,036,854,775,80
-float 	4 bytes 	7 decimal digits.	
-double 	8 bytes 	16 decimal digits.	
+        التقريب لخانتين عشرية
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a Number : ");
+            double Number= input.nextDouble( );
+            double area = Number * Number * 3.1459;
+        System.out.println( " The area for the Number :  "  +  ( int )( Number * 1000 ) / 1000.0 );
 
 
+
+        ****************************************************************/
 
 
 
