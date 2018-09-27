@@ -1,0 +1,23 @@
+//  Convert Time
+
+import java.util.Scanner;
+
+public class Convert_Time {
+
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Enter an integer for seconds: ");
+            int seconds = input.nextInt();
+            
+            int minutes = seconds / 60 ;    //ind minutes
+            int remainingSeconds = seconds % 60;    // Seconds temaining
+            
+        System.out.println(  seconds +" Seconds is : " + minutes +  " minutes & " + remainingSeconds + "  Seconds "  );
+
+
+
+    }
+    
+}
