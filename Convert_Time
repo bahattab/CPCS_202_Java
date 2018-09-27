@@ -1,4 +1,38 @@
-//  Convert Time
+//  Convert Time - See sample program: TimeCalculation.java
+
+/*
+
+Write a program to get an amount of time from the user in seconds. Then your program should convert this time into minutes and the remaining seconds.
+Remember:
+–Step 1: Problem-solving Phase
+–Step 2: Implementation Phase
+
+Step 1: Problem-solving Phase
+–If you are given seconds, how do you then calculate the minutes and remaining seconds?
+    Example:
+        –Given 624 seconds, how do we calculate the minutes?
+        –We divide by 60!
+            •We see how many complete 60s are in 624.
+            •Answer: 10 of them. 10x60 = 600.
+        –So in 624 seconds, there are a full 10 minutes.
+        –After we remove those 10 minutes, how many seconds are remaining?
+            •624 –(10x60) = 24 seconds remaining
+            •We can use mod! 624%60 = 24 seconds remaining.
+
+Step 1: Design your algorithm
+1.Get amount of seconds from the user.
+    Use Scanner object
+    Save as an int
+2.Compute the minutes and seconds remaining:
+    From these seconds, determine the number of minutes
+        Example:
+            –150 seconds => 2 minutes and 30 seconds
+            –315 seconds => 5 minutes and 15 seconds
+                •315 / 60 = 5 and 315 % 60 = 15
+3.Display the result
+
+*/
+
 
 import java.util.Scanner;
 
@@ -21,3 +55,13 @@ public class Convert_Time {
     }
     
 }
+
+
+/*
+run:
+Enter an integer for seconds: 
+500
+500 Seconds is : 8 minutes & 20  Seconds 
+BUILD SUCCESSFUL (total time: 3 seconds)
+
+*/
