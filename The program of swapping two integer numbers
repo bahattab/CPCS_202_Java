@@ -1,0 +1,20 @@
+System.out.print(   );	\n   \t	System .out.print("test \n");
+System.out.println(   );	\n   \t	System.out.println("test \t");
+The program of swapping two integer numbers
+        int num1, num2 , num3 ;
+        
+        num1=50 ;
+        num2= 100;
+        
+        System.out.println ( "Before Swap : Number 1 = "   +   num1   +   "   Number 2 = "   +   num2 );
+        
+        num3=num1;
+        num1=num2;
+        num2=num3;
+        
+        System.out.println ( "After Swap  : Number 1 = "   +   num1   +   "   Number 2 = "   +   num2 );
+
+run:
+before Swap : Number 1 = 50   Number 2 = 100
+After Swap  : Number 1 =100   Number 2 = 50
+BUILD SUCCESSFUL (total time: 0 seconds)
