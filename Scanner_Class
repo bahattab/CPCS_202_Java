@@ -1,16 +1,13 @@
 import java.util.Scanner;
 Scanner scanner_name= new Scanner(System.in);
-var_name= scanner_name.input_method;
-
+var_name = scanner_name.input_method;
 
 
 next( ): 	if String 
 nextInt( ): 	if int 
-nextDouble( ): if double 
+nextDouble( ):  if double 
 nextFloat( ): 	if float 
 nextByte( ):	if byte
-
-
 
 
 Scanner input = new Scanner(System.in);
@@ -18,7 +15,6 @@ System.out.print ("Enter a Number for Radius : ");
         double radius= input.nextDouble ( );
         double area = radius * radius * 3.1459;
 System.out.println ( "The area for the circle of Radius : " + radius + "  is  " + area );
-
 
 
 
@@ -37,6 +33,52 @@ System.out.print("Enter a Number : ");
     double Number= input.nextDouble( );
     double area = Number * Number * 3.1459;
 System.out.println( " The area for the Number :  "  +  ( int )( Number * 1000 ) / 1000.0 );
+
+
+
+
+package lab_02;
+    import java.util.Scanner;
+public class Lab_02 {
+    public static void main(String[] args) {
+        
+        /****************************************************************
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a Number for Radius : ");
+            double radius= input.nextDouble();
+            double area = radius * radius * 3.1459;
+        System.out.println("The area for the circle of Radius : " + radius + "  is  " + area);
+        ****************************************************************/
+
+
+        /****************************************************************
+        Scanner input= new Scanner(System.in);
+        System.out.print("Enter anumber in pounds : " );
+            double kilo = 0.454;
+            double pounds = kilo * input.nextDouble() ;
+        System.out.print("pounds in kilograms is :  " + pounds);
+        ****************************************************************/
+
+
+        /****************************************************************/
+        Scanner input = new Scanner(System.in);
+        System.out.print ("Enter the SubTotal:  "); 	//Enter the subtotal:  78        
+            double subTotal = input.nextDouble();
+        System.out.print ("Enter the Tip Rate: "); 	//Enter the tip rate: 5          
+            double tipRate = input.nextDouble();
+            double Tip = ( tipRate/100 ) * subTotal;
+            double Total = subTotal + Tip;
+        System.out.println("The Tip is: " + (int)(Tip*1000)/1000.0 + " SR  ");	// The tip is 3.9 SR.
+        System.out.println("The Total is:   " + Total + " SR  ");		// The Total is 81.9 SR.       
+        /****************************************************************/
+
+
+
+
+
+
+
+
 
 
 
